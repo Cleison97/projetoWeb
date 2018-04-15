@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+      Anunciar
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+              </div>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item active" href="full-width.html">Full Width Page</a>
+                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                <a class="dropdown-item" href="faq.html">FAQ</a>
+                <a class="dropdown-item" href="404.html">404</a>
+                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Login
+        <small>Acesse sua conta</small>
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Login</li>
+      </ol>
+
+
+      <!-- Login -->
+      <div class="col-md-6 login">
+
+        <form class="form" method="POST" action="../controle/login.php">
+
+          <div class="form-group">
+            <label for="email"><h3>E-mail</h3></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <div class="form-group">
+            <label for="senha"><h3>Senha</h3></label>
+            <input type="password" class="form-control" id="email" name="senha" placeholder="Digite sua senha" maxlength="8" required>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#janela_recuperar_senha">
+               Esqueceu sua senha?
+              </button>
+            </div>
+          </div>
+          
+
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <button type="submit" class="btn btn-dark btn-block">Logar</button>  
+            </div>
+
+            <div class="col-md-4"></div>
+
+            
+            <div class="col-md-4 col-sm-12">
+              <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#janela_cadastro">
+                Cadastrar-se
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+
+      <!-- Modal Recuperação de senha-->
+      <form class="modal fade" id="janela_recuperar_senha" method="POST" action="">
+
+        <div class="modal-dialog">
+
+          <div class="modal-content fundo_recuperar_senha">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title" id="janelaLabel">
+                Recuperar Senha
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="row">
+
+                <div class="form-group col-md-12">
+                  <label for="email"><h6>E-mail</h6></label>
+                  <input type="email" class="form-control" id="email" name="email" autofocus required>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-dark">Enviar Senha</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+      <!-- /.modal -->
+
+      <!-- Modal Cadastro-->
+      <form class="modal fade" id="janela_cadastro" method="POST" action="">
+
+        <div class="modal-dialog">
+
+          <div class="modal-content fundo_inscricao">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title" id="janelaLabel">
+                Inscrição
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+
+            <div class="modal-body">
+
+              <div class="row">
+
+                <div class="form-group col-md-12">
+                  <label for="nome"><h6>Nome</h6></label>
+                  <input type="text" class="form-control" id="nome" name="nome" required autofocus>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <label for="email"><h6>E-mail</h6></label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            
+                <div class="form-group col-md-12">
+                  <label for="senha"><h6>Senha</h6></label>
+                  <input type="password" class="form-control" id="senha" name="senha" required maxlength="8">
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-dark">Salvar</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+      <!-- /.modal -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
